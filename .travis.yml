@@ -1,0 +1,10 @@
+language: python
+python:
+  - 3.6
+before_install:
+  - python --version
+  - pip install pip
+  - pip install pytest-cov
+  - pip install pytest
+script:
+  - pytest --cov=com.eduardodavi com/eduardodavi/test/
